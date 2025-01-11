@@ -8,7 +8,11 @@ export const axiosInstance = axios.create({
   headers: { Authorization: localStorage.getItem("token") },
 });
 
-// registeration
+axiosInstance.interceptors.request.use((config) => {
+  config.headers.Authorization = localStorage.getItem("token");
+  return config;
+});
+
 
 export const users = {
   createUser: "/Users/Register",
