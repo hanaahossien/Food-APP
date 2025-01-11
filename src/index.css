@@ -1,0 +1,305 @@
+@charset "utf=8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    background-color: #301934;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    * {
+        scrollbar-width: auto;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #009247;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1F263E;
+}
+
+::-webkit-scrollbar-button {
+    background-color: #1F263E;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+}
+
+h1 {
+    text-align: center;
+}
+
+.bg-gray {
+    background-color: #0f131f0f !important;
+}
+
+.bg-light_green{background-color: #f0ffef;}
+
+.text-black {
+    color: #3A3A3D !important;
+}
+
+
+
+.auth-conatiner {
+    background-image: url('assets/cover.svg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.overlay-auth {
+    background: linear-gradient(45deg, rgba(55, 140, 47, 0.7), rgba(0, 0, 0, 0.5));
+
+}
+
+
+
+form .input-group-text.bg-gray {
+    width: 40px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #4aa35a !important;
+    box-shadow: 0 0 0 .25rem rgb(74 163 90 / 25%) !important;
+}
+
+.container-sidebar {
+    height: 100vh;
+    background-color: #1F263E;
+    margin-left: -20px;
+    border-radius: 0 40px 0 0;
+    height: 100 vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    ;
+}
+
+
+.navlogo {
+    width: 150px !important;
+}
+
+ul.css-ewdv3l li:first-child a {
+    background-color: transparent !important;
+}
+
+ul.css-ewdv3l li:first-child a:hover {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.css-1wvake5 {
+    border: none !important;
+}
+
+.css-dip3t8 {
+    background-color: transparent !important;
+}
+
+
+.header {
+    background-color: #009247;
+    height: 250px;
+    border-radius: 10px;
+    background-size: cover;
+    background-image: url("assets/bg.svg");
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    background-color: #F8F9FB;
+}
+
+.table>:not(caption)>*>* {
+    box-shadow: none !important;
+}
+
+thead th {
+    background-color: #E2E5EB !important
+}
+
+.deleteconfirmatin.modal-header {
+    display: flex;
+    justify-content: end;
+}
+
+.css-1qkeeaw>.ps-menu-button {
+
+    transition: 0.4s all ease-in-out;
+}
+
+.css-1qkeeaw>.ps-menu-button:hover {
+    background-color: #0092471A !important;
+    border-left: 10px solid #009247;
+    transition: 0.4s all ease-in-out;
+
+}
+
+
+.bg-darkgray {
+    background-color: #1F263E;
+    border-radius: 0 40px 0 0;
+}
+
+.recipe .form-control,
+.recipe select {
+    background-color: #F7F7F7 !important;
+    border: none;
+    padding: 0.7rem;
+
+}
+
+.recipe ::placeholder {
+    color: #00000033 !important;
+    opacity: 1;
+    /* Firefox */
+}
+
+.recipe input.file {
+    background: #F1FFF0 !important;
+    padding: 50px;
+    border: 1px solid #009247;
+    border-style: dashed;
+
+}
+
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+}
+
+.upload-btn-wrapper .btn {
+    background: #F1FFF0 !important;
+    padding: 10px 0 10px 0;
+    border: 1px solid #009247;
+    border-style: dashed;
+    width: 100%;
+}
+
+
+
+.upload-btn-wrapper .btn:before {
+    content: "\e09a";
+    /* this is your text. You can also use UTF-8 character codes as I do here */
+    font-family: FontAwesome;
+    left: 20px;
+    position: absolute;
+    top: 0;
+    top: 10px;
+    color: #009247
+}
+
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    opacity: 0;
+}
+
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    max-width: 50px;
+    z-index: 1;
+    right: 5px;
+}
+
+.dropdown-content span {
+    color: black;
+    padding: 4px 10px;
+    text-decoration: none;
+    display: block;
+    transition: all ease-in-out 0.2s;
+}
+
+.dropdown-content span:hover {
+    transform: scale(1.2);
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+:focus-visible {
+    outline: none !important;
+    border: none !important;
+}
+
+.pagination .page-item {
+    border-color: #198754 !important;
+}
+
+.pagination .page-item .page-link {
+    color: #198754 !important;
+}
+
+.active>.page-link,
+.page-link.active {
+    z-index: 3;
+    background-color: #198754 !important;
+}
+
+span.page-link {
+    cursor: pointer;
+}
+
+
+
+li.page-item.active .page-link {
+    color: #ffffff !important;
+    border-color: #198754 !important;
+}
+
+.page-link:focus {
+    box-shadow: none !important;
+}
+
+
+span.page-link:foucs {
+    background: red !important;
+}
+
+li.page-item span.page-link:hover ,a.ps-menu-button.active{
+    background-color: #198754 !important;
+    color: #ffffff !important;
+}
+
+
+/* ///sec project */
