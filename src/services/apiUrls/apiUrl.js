@@ -4,8 +4,8 @@ export const baseURL = "https://upskilling-egypt.com:3006/api/v1";
 export const imgURL = "https://upskilling-egypt.com:3006/";
 
 export const axiosInstance = axios.create({
-  baseURL,
-  headers: { Authorization: localStorage.getItem("token") },
+  baseURL
+//  headers: { Authorization: localStorage.getItem("token") },
 });
 
 axiosInstance.interceptors.request.use((config) => {
